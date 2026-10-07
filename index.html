@@ -1173,10 +1173,10 @@
 
     <div class="container">
 
-
       <div class="footer-grid">
 
 
+        <!-- FOOTER BRAND -->
         <div class="footer-brand">
 
           <a href="index.html" class="brand">
@@ -1195,19 +1195,20 @@
           <p>
             Web developer and digital solutions specialist
             creating modern, responsive and purposeful
-            digital experiences.
+            digital experiences for businesses, brands and
+            professional clients.
           </p>
 
         </div>
 
 
 
+        <!-- NAVIGATION -->
         <div class="footer-column">
 
           <h4>
             Navigation
           </h4>
-
 
           <ul>
 
@@ -1241,12 +1242,12 @@
 
 
 
+        <!-- EXPLORE -->
         <div class="footer-column">
 
           <h4>
             Explore
           </h4>
-
 
           <ul>
 
@@ -1268,42 +1269,48 @@
               </a>
             </li>
 
+            <li>
+              <a href="privacy.html">
+                Privacy Policy
+              </a>
+            </li>
+
           </ul>
 
         </div>
 
 
 
+        <!-- LEGAL -->
         <div class="footer-column">
 
           <h4>
-            Services
+            Legal
           </h4>
-
 
           <ul>
 
             <li>
-              <a href="services.html">
-                Website Development
+              <a href="terms.html">
+                Terms &amp; Conditions
               </a>
             </li>
 
             <li>
-              <a href="services.html">
-                Ecommerce
+              <a href="cookies.html">
+                Cookies
               </a>
             </li>
 
             <li>
-              <a href="services.html">
-                Responsive Design
+              <a href="disclaimer.html">
+                Disclaimer
               </a>
             </li>
 
             <li>
-              <a href="services.html">
-                SEO Foundations
+              <a href="refund-policy.html">
+                Refund Policy
               </a>
             </li>
 
@@ -1320,12 +1327,56 @@
 
 
 
+  <!-- FOOTER BOTTOM -->
+
   <div class="footer-bottom">
 
     <div class="container">
 
-      <p>
-        © 2026 Abdul Hafeez. All rights reserved.
+      <div class="footer-bottom-inner">
+
+        <p>
+          © 2026 Abdul Hafeez. All rights reserved.
+        </p>
+
+
+        <p>
+          Trade Trove LLC · United States Registered Company
+        </p>
+
+
+        <div class="footer-social">
+
+          <a
+            href="https://www.linkedin.com/in/abdul-hafeez-854a67441/?isSelfProfile=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            LinkedIn
+          </a>
+
+
+          <a
+            href="https://profile.indeed.com/?hl=en_US&amp;co=US&amp;from=gnav-homepage"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Indeed"
+          >
+            Indeed
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <p class="footer-address">
+
+        Registered Agent Address:
+        8 The Green, Suite A, Dover, Delaware 19901,
+        United States.
+
       </p>
 
     </div>
@@ -1333,70 +1384,3 @@
   </div>
 
 </footer>
-
-
-
-<!-- =======================================================
-     MOBILE NAVIGATION SCRIPT
-======================================================= -->
-
-<script>
-
-  const mobileToggle =
-    document.querySelector(".mobile-toggle");
-
-  const navigation =
-    document.querySelector("#main-navigation");
-
-
-  if (mobileToggle && navigation) {
-
-    mobileToggle.addEventListener("click", function () {
-
-      const isOpen =
-        navigation.classList.toggle("open");
-
-      mobileToggle.setAttribute(
-        "aria-expanded",
-        isOpen
-      );
-
-      mobileToggle.setAttribute(
-        "aria-label",
-        isOpen
-          ? "Close navigation"
-          : "Open navigation"
-      );
-
-    });
-
-
-    navigation
-      .querySelectorAll("a")
-      .forEach(function (link) {
-
-        link.addEventListener("click", function () {
-
-          navigation.classList.remove("open");
-
-          mobileToggle.setAttribute(
-            "aria-expanded",
-            "false"
-          );
-
-          mobileToggle.setAttribute(
-            "aria-label",
-            "Open navigation"
-          );
-
-        });
-
-      });
-
-  }
-
-</script>
-
-
-</body>
-</html>
