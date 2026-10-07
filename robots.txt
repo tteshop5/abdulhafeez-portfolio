@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abdulhafeez.thetradetrove.com/sitemap.xml
