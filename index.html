@@ -1,78 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Abdul Hafeez | Web Developer & Digital Solutions Specialist</title>
 
-  <meta name="description"
-        content="Abdul Hafeez is a web developer and digital solutions specialist building modern, responsive websites and digital experiences for ambitious businesses.">
+  <meta
+    name="description"
+    content="Abdul Hafeez is a web developer and digital solutions specialist creating modern, responsive and conversion-focused websites for businesses and ambitious brands."
+  >
 
-  <meta name="keywords"
-        content="Abdul Hafeez, web developer, website development, responsive websites, Shopify, WooCommerce, SEO, digital solutions">
+  <meta
+    name="keywords"
+    content="Abdul Hafeez, web developer, website development, responsive websites, Shopify, WooCommerce, SEO, digital solutions"
+  >
 
   <meta name="author" content="Abdul Hafeez">
+
   <meta name="robots" content="index, follow">
 
-  <meta property="og:title"
-        content="Abdul Hafeez | Web Developer & Digital Solutions Specialist">
+  <!-- Open Graph -->
+  <meta
+    property="og:title"
+    content="Abdul Hafeez | Web Developer & Digital Solutions Specialist"
+  >
 
-  <meta property="og:description"
-        content="Modern websites and digital solutions designed with clarity, performance and purpose.">
+  <meta
+    property="og:description"
+    content="Modern websites, ecommerce experiences and digital solutions built with purpose."
+  >
 
   <meta property="og:type" content="website">
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
 
+  <!-- Master stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-<header class="site-header">
+<!-- =======================================================
+     HEADER
+======================================================= -->
 
-  <div class="container nav-container">
+<header>
+
+  <div class="container">
 
     <a href="index.html" class="brand" aria-label="Abdul Hafeez Home">
 
       <span class="brand-mark">AH</span>
 
-      <span class="brand-name">
-        Abdul Hafeez
-      </span>
+      <span>Abdul Hafeez</span>
 
     </a>
 
+
     <button
-      class="menu-toggle"
+      class="mobile-toggle"
       type="button"
       aria-label="Open navigation"
       aria-expanded="false"
-      aria-controls="main-navigation">
+      aria-controls="main-navigation"
+    >
       ☰
     </button>
 
-    <nav class="main-nav" id="main-navigation">
 
-      <a href="index.html" class="active">Home</a>
+    <nav id="main-navigation" aria-label="Main navigation">
 
-      <a href="about.html">About</a>
+      <ul>
 
-      <a href="services.html">Services</a>
+        <li>
+          <a href="index.html" class="active">Home</a>
+        </li>
 
-      <a href="portfolio.html">Portfolio</a>
+        <li>
+          <a href="about.html">About</a>
+        </li>
 
-      <a href="skills.html">Skills</a>
+        <li>
+          <a href="services.html">Services</a>
+        </li>
 
-      <a href="experience.html">Experience</a>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
 
-      <a href="contact.html">Contact</a>
+        <li>
+          <a href="skills.html">Skills</a>
+        </li>
+
+        <li>
+          <a href="experience.html">Experience</a>
+        </li>
+
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+
+      </ul>
 
     </nav>
 
@@ -84,21 +123,21 @@
 <main>
 
 
-<!-- =====================================================
+<!-- =======================================================
      HERO
-===================================================== -->
+======================================================= -->
 
 <section class="hero">
 
-  <div class="container hero-grid">
+  <div class="container">
+
 
     <div class="hero-content">
 
-      <div class="eyebrow">
-        WEB DEVELOPMENT
-        <span></span>
-        DIGITAL SOLUTIONS
+      <div class="hero-eyebrow">
+        Web Development
       </div>
+
 
       <h1>
         Building digital
@@ -106,105 +145,99 @@
         that stand out.
       </h1>
 
-      <p class="hero-text">
-        I'm Abdul Hafeez, a web developer focused on creating
-        modern, responsive and purposeful digital experiences
-        for businesses, brands and ambitious projects.
+
+      <p class="hero-description">
+        I create modern, responsive and purposeful websites
+        for businesses, brands and ambitious people who want
+        a professional digital presence.
       </p>
 
-      <div class="hero-buttons">
+
+      <div class="hero-actions">
 
         <a href="portfolio.html" class="btn btn-primary">
           View My Work
-          <span>↗</span>
+          <span aria-hidden="true">↗</span>
         </a>
 
         <a href="contact.html" class="btn btn-secondary">
           Let's Work Together
+          <span aria-hidden="true">→</span>
         </a>
 
       </div>
 
+
       <div class="hero-trust">
 
-        <div>
-          <strong>01</strong>
-          <span>Creative Development</span>
-        </div>
+        <span>Creative Development</span>
 
-        <div>
-          <strong>02</strong>
-          <span>Responsive Design</span>
-        </div>
+        <span>Responsive Design</span>
 
-        <div>
-          <strong>03</strong>
-          <span>Digital Solutions</span>
-        </div>
+        <span>Digital Solutions</span>
 
       </div>
 
     </div>
 
 
-    <!-- HERO VISUAL -->
 
-    <div class="hero-visual">
+    <!-- HERO DIGITAL VISUAL -->
+
+    <div class="hero-visual" aria-hidden="true">
+
 
       <div class="hero-card">
 
-        <div class="hero-card-top">
+        <div class="hero-card-content">
 
-          <span>01</span>
-
-          <span>WEB EXPERIENCE</span>
-
-        </div>
-
-        <div class="hero-card-main">
-
-          <div class="hero-card-symbol">
-            AH
+          <div class="hero-card-label">
+            01 — WEB EXPERIENCE
           </div>
 
-          <div class="hero-card-lines">
 
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="hero-card-title">
+
+            DESIGN
+
+            <span>DEVELOPMENT</span>
 
           </div>
 
+
+          <div class="hero-card-bottom">
+
+            <span>STRATEGY</span>
+
+            <span>2026</span>
+
+          </div>
+
         </div>
 
-        <div class="hero-card-bottom">
+      </div>
 
-          <span>DESIGN</span>
-          <span>DEVELOPMENT</span>
-          <span>STRATEGY</span>
 
-        </div>
+      <div class="floating-card html">
+
+        <strong>HTML Structure</strong>
+
+        <span>Clean & Semantic</span>
 
       </div>
 
 
-      <div class="floating-card floating-card-one">
+      <div class="floating-card css">
 
-        <strong>HTML</strong>
-        <span>Structure</span>
+        <strong>CSS Interface</strong>
 
-      </div>
-
-
-      <div class="floating-card floating-card-two">
-
-        <strong>CSS</strong>
-        <span>Interface</span>
+        <span>Responsive & Modern</span>
 
       </div>
 
 
-      <div class="red-orb"></div>
+      <div class="hero-orb"></div>
+
 
     </div>
 
@@ -214,45 +247,97 @@
 
 
 
-<!-- =====================================================
+<!-- =======================================================
      ABOUT PREVIEW
-===================================================== -->
+======================================================= -->
 
-<section class="section about-preview">
+<section class="about-preview section">
 
-  <div class="container two-column">
-
-    <div>
-
-      <div class="section-label">
-        ABOUT ME
-      </div>
-
-      <h2>
-        Turning ideas into
-        <span>digital experiences.</span>
-      </h2>
-
-    </div>
+  <div class="container">
 
 
     <div class="about-preview-content">
 
-      <p>
-        I build websites and digital experiences with a strong
-        focus on clean design, responsive layouts and practical
-        functionality.
-      </p>
+      <div class="section-label">
+        About Me
+      </div>
+
+
+      <h2>
+        Turning ideas into
+        digital experiences.
+      </h2>
+
 
       <p>
-        My approach combines frontend development, ecommerce,
-        SEO foundations and digital setup to help transform
-        ideas into professional online experiences.
+        I am Abdul Hafeez, a web developer focused on creating
+        clean, responsive and professional digital experiences.
       </p>
 
-      <a href="about.html" class="text-link">
-        More About Me →
+
+      <p>
+        My approach combines thoughtful design, practical
+        development and business-focused solutions to help
+        websites look better, work better and communicate
+        clearly.
+      </p>
+
+
+      <a href="about.html" class="btn btn-dark">
+        More About Me
+        <span aria-hidden="true">→</span>
       </a>
+
+    </div>
+
+
+
+    <div class="about-stats">
+
+
+      <div class="about-stat">
+
+        <strong>01</strong>
+
+        <span>
+          Modern Web Experiences
+        </span>
+
+      </div>
+
+
+      <div class="about-stat">
+
+        <strong>02</strong>
+
+        <span>
+          Responsive Development
+        </span>
+
+      </div>
+
+
+      <div class="about-stat">
+
+        <strong>03</strong>
+
+        <span>
+          Ecommerce Solutions
+        </span>
+
+      </div>
+
+
+      <div class="about-stat">
+
+        <strong>04</strong>
+
+        <span>
+          Digital Growth Foundations
+        </span>
+
+      </div>
+
 
     </div>
 
@@ -262,118 +347,194 @@
 
 
 
-<!-- =====================================================
+<!-- =======================================================
      SERVICES
-===================================================== -->
+======================================================= -->
 
-<section class="section services-section">
+<section class="services section">
 
   <div class="container">
 
-    <div class="split-heading">
 
-      <div>
+    <div class="section-heading">
 
-        <div class="section-label">
-          SERVICES
-        </div>
-
-        <h2>
-          Digital solutions
-          <span>built with purpose.</span>
-        </h2>
-
+      <div class="section-label">
+        Services
       </div>
 
-      <a href="services.html" class="text-link">
-        Explore Services →
-      </a>
+
+      <h2>
+        Simple services.
+        Professional results.
+      </h2>
+
+
+      <p>
+        Flexible website development packages designed for
+        businesses, brands and individuals at different stages.
+      </p>
 
     </div>
 
 
-    <div class="service-grid">
 
+    <div class="services-grid">
+
+
+      <!-- STARTER -->
 
       <article class="service-card">
 
-        <div class="service-number">
-          01
+        <div class="service-badge">
+          Starter
         </div>
+
 
         <h3>
-          Starter
+          Essential Website
         </h3>
 
+
         <p>
-          A clean and responsive website for individuals,
-          small businesses and simple projects.
+          A clean and professional website foundation for
+          individuals, startups and small businesses.
         </p>
 
-        <div class="price">
-          Starting at $99
+
+        <div class="service-price">
+
+          <strong>$99</strong>
+
+          <span>starting</span>
+
         </div>
 
-        <a href="services.html">
-          View Package →
+
+        <ul class="service-features">
+
+          <li>Up to 3 pages</li>
+
+          <li>Responsive design</li>
+
+          <li>Modern layout</li>
+
+          <li>Basic SEO foundation</li>
+
+          <li>1 revision</li>
+
+        </ul>
+
+
+        <a href="contact.html" class="btn btn-secondary">
+          Get Started
         </a>
 
       </article>
 
 
+
+      <!-- STANDARD -->
 
       <article class="service-card featured">
 
-        <div class="service-number">
-          02
+        <div class="service-badge">
+          Most Popular
         </div>
 
-        <div class="popular">
-          MOST POPULAR
-        </div>
 
         <h3>
-          Standard
+          Professional Website
         </h3>
 
+
         <p>
-          A professional multi-page website designed for
-          businesses that need a stronger online presence.
+          A complete professional website designed to build
+          credibility and create a stronger online presence.
         </p>
 
-        <div class="price">
-          Starting at $249
+
+        <div class="service-price">
+
+          <strong>$249</strong>
+
+          <span>starting</span>
+
         </div>
 
-        <a href="services.html">
-          View Package →
+
+        <ul class="service-features">
+
+          <li>Up to 6 pages</li>
+
+          <li>Premium responsive design</li>
+
+          <li>SEO-ready structure</li>
+
+          <li>Contact functionality</li>
+
+          <li>Performance optimization</li>
+
+          <li>3 revisions</li>
+
+        </ul>
+
+
+        <a href="contact.html" class="btn btn-primary">
+          Choose Standard
         </a>
 
       </article>
 
 
 
+      <!-- PREMIUM -->
+
       <article class="service-card">
 
-        <div class="service-number">
-          03
+        <div class="service-badge">
+          Premium
         </div>
+
 
         <h3>
-          Premium
+          Complete Digital Experience
         </h3>
 
+
         <p>
-          An advanced digital experience with expanded pages,
-          refined design and more customization.
+          A premium website solution for businesses that need
+          a stronger digital presence and advanced presentation.
         </p>
 
-        <div class="price">
-          Starting at $499
+
+        <div class="service-price">
+
+          <strong>$499</strong>
+
+          <span>starting</span>
+
         </div>
 
-        <a href="services.html">
-          View Package →
+
+        <ul class="service-features">
+
+          <li>Custom multi-page website</li>
+
+          <li>Premium UI/UX direction</li>
+
+          <li>Advanced responsive design</li>
+
+          <li>SEO foundations</li>
+
+          <li>Performance-focused build</li>
+
+          <li>5 revisions</li>
+
+        </ul>
+
+
+        <a href="contact.html" class="btn btn-secondary">
+          Discuss Your Project
         </a>
 
       </article>
@@ -387,72 +548,75 @@
 
 
 
-<!-- =====================================================
-     FEATURED WORK
-===================================================== -->
+<!-- =======================================================
+     FEATURED PORTFOLIO
+======================================================= -->
 
-<section class="section portfolio-preview">
+<section class="portfolio-preview section">
 
   <div class="container">
 
-    <div class="split-heading">
 
-      <div>
+    <div class="section-heading">
 
-        <div class="section-label">
-          SELECTED WORK
-        </div>
-
-        <h2>
-          Projects that
-          <span>show what I build.</span>
-        </h2>
-
+      <div class="section-label">
+        Selected Work
       </div>
 
-      <a href="portfolio.html" class="text-link">
-        View Full Portfolio →
-      </a>
+
+      <h2>
+        Projects built with
+        purpose.
+      </h2>
+
+
+      <p>
+        A selection of digital projects demonstrating web
+        development, ecommerce and business-focused solutions.
+      </p>
 
     </div>
 
 
-    <div class="project-grid">
+
+    <div class="portfolio-grid">
 
 
-      <!-- PROJECT 1 -->
+      <!-- MY MARTZA -->
 
       <article class="project-card">
 
-        <div class="project-visual project-red">
-
-          <div class="project-mark">
-            MM
-          </div>
+        <div class="project-visual">
 
           <span>
-            EXPORT
+            BUSINESS WEBSITE
           </span>
 
         </div>
 
+
         <div class="project-info">
 
-          <div class="project-category">
-            BUSINESS WEBSITE
-          </div>
+          <span class="project-category">
+            Business Website
+          </span>
+
 
           <h3>
             MY Martza / Export Premium Quality Rice
           </h3>
 
+
           <p>
-            A professional digital experience created
-            around a premium rice export business.
+            A professional business-focused web experience
+            designed to present products, credibility and
+            international business positioning.
           </p>
 
-          <a href="portfolio.html">
-            Explore Project →
+
+          <a href="portfolio.html" class="project-link">
+            View Project
+            <span aria-hidden="true">↗</span>
           </a>
 
         </div>
@@ -461,54 +625,41 @@
 
 
 
-      <!-- PROJECT 2 -->
+      <!-- TROVE BEAUTY -->
 
       <article class="project-card">
 
-        <div class="project-visual project-black">
+        <div class="project-visual">
 
-          <div class="project-browser">
-
-            <div class="browser-top">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-
-            <div class="browser-body">
-
-              <strong>
-                TROVE
-              </strong>
-
-              <small>
-                BEAUTY CO.
-              </small>
-
-            </div>
-
-          </div>
+          <span>
+            ECOMMERCE
+          </span>
 
         </div>
 
+
         <div class="project-info">
 
-          <div class="project-category">
-            ECOMMERCE
-          </div>
+          <span class="project-category">
+            Ecommerce
+          </span>
+
 
           <h3>
             Trove Beauty Co.
           </h3>
 
+
           <p>
-            A beauty ecommerce experience combining
+            A modern beauty ecommerce experience focused on
             product presentation, responsive design and
-            digital commerce setup.
+            customer-friendly navigation.
           </p>
 
-          <a href="portfolio.html">
-            Explore Project →
+
+          <a href="portfolio.html" class="project-link">
+            View Project
+            <span aria-hidden="true">↗</span>
           </a>
 
         </div>
@@ -517,41 +668,41 @@
 
 
 
-      <!-- PROJECT 3 -->
+      <!-- BUSINESS WEB EXPERIENCE -->
 
       <article class="project-card">
 
-        <div class="project-visual project-outline">
+        <div class="project-visual">
 
-          <div class="business-layout">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <div></div>
-
-          </div>
+          <span>
+            WEB DEVELOPMENT
+          </span>
 
         </div>
 
+
         <div class="project-info">
 
-          <div class="project-category">
-            WEB DEVELOPMENT
-          </div>
+          <span class="project-category">
+            Web Development
+          </span>
+
 
           <h3>
             Business Web Experience
           </h3>
 
+
           <p>
-            A modern website concept focused on clear
-            information architecture and responsive presentation.
+            A modern digital concept demonstrating clean
+            structure, responsive layouts and professional
+            business presentation.
           </p>
 
-          <a href="portfolio.html">
-            Explore Project →
+
+          <a href="portfolio.html" class="project-link">
+            View Project
+            <span aria-hidden="true">↗</span>
           </a>
 
         </div>
@@ -561,84 +712,143 @@
 
     </div>
 
-  </div>
 
-</section>
+    <div style="text-align:center; margin-top:35px;">
 
-
-
-<!-- =====================================================
-     SKILLS
-===================================================== -->
-
-<section class="section skills-preview">
-
-  <div class="container two-column">
-
-    <div>
-
-      <div class="section-label">
-        SKILLS
-      </div>
-
-      <h2>
-        The tools behind
-        <span>the work.</span>
-      </h2>
-
-      <p>
-        A growing technical toolkit focused on practical
-        web development and digital solutions.
-      </p>
-
-      <a href="skills.html" class="text-link">
-        Explore My Skills →
+      <a href="portfolio.html" class="btn btn-dark">
+        Explore Full Portfolio
+        <span aria-hidden="true">→</span>
       </a>
 
     </div>
 
+  </div>
 
-    <div class="skills-list">
+</section>
 
-      <div class="skill-item">
-        <span>HTML</span>
-        <strong>01</strong>
+
+
+<!-- =======================================================
+     SKILLS
+======================================================= -->
+
+<section class="skills section">
+
+  <div class="container">
+
+
+    <div class="section-heading center">
+
+      <div class="section-label">
+        Skills & Tools
       </div>
 
-      <div class="skill-item">
-        <span>CSS</span>
-        <strong>02</strong>
+
+      <h2>
+        Built on practical
+        digital skills.
+      </h2>
+
+
+      <p>
+        A growing technical toolkit focused on modern web
+        development, ecommerce and digital foundations.
+      </p>
+
+    </div>
+
+
+
+    <div class="skills-grid">
+
+
+      <div class="skill-card">
+
+        <strong>HTML</strong>
+
+        <span>
+          Semantic structure
+        </span>
+
       </div>
 
-      <div class="skill-item">
-        <span>JavaScript</span>
-        <strong>03</strong>
+
+      <div class="skill-card">
+
+        <strong>CSS</strong>
+
+        <span>
+          Modern responsive styling
+        </span>
+
       </div>
 
-      <div class="skill-item">
-        <span>Responsive Web Design</span>
-        <strong>04</strong>
+
+      <div class="skill-card">
+
+        <strong>JavaScript</strong>
+
+        <span>
+          Interactive experiences
+        </span>
+
       </div>
 
-      <div class="skill-item">
-        <span>Shopify</span>
-        <strong>05</strong>
+
+      <div class="skill-card">
+
+        <strong>Responsive Web Design</strong>
+
+        <span>
+          Mobile-first layouts
+        </span>
+
       </div>
 
-      <div class="skill-item">
-        <span>WooCommerce</span>
-        <strong>06</strong>
+
+      <div class="skill-card">
+
+        <strong>Shopify</strong>
+
+        <span>
+          Ecommerce development
+        </span>
+
       </div>
 
-      <div class="skill-item">
-        <span>SEO Foundations</span>
-        <strong>07</strong>
+
+      <div class="skill-card">
+
+        <strong>WooCommerce</strong>
+
+        <span>
+          Ecommerce foundations
+        </span>
+
       </div>
 
-      <div class="skill-item">
-        <span>GitHub</span>
-        <strong>08</strong>
+
+      <div class="skill-card">
+
+        <strong>SEO Foundations</strong>
+
+        <span>
+          Search-friendly structure
+        </span>
+
       </div>
+
+
+      <div class="skill-card">
+
+        <strong>GitHub</strong>
+
+        <span>
+          Version control & deployment
+        </span>
+
+      </div>
+
 
     </div>
 
@@ -648,26 +858,36 @@
 
 
 
-<!-- =====================================================
+<!-- =======================================================
      WHY WORK WITH ME
-===================================================== -->
+======================================================= -->
 
-<section class="section why-section">
+<section class="why section">
 
   <div class="container">
+
 
     <div class="section-heading">
 
       <div class="section-label">
-        WHY WORK WITH ME
+        Why Work With Me
       </div>
 
+
       <h2>
-        Professional thinking.
-        <span>Practical execution.</span>
+        Professional thinking
+        behind every project.
       </h2>
 
+
+      <p>
+        My goal is not simply to build a website, but to create
+        a digital experience that communicates clearly and
+        supports the client's goals.
+      </p>
+
     </div>
+
 
 
     <div class="why-grid">
@@ -675,15 +895,19 @@
 
       <article class="why-card">
 
-        <span>01</span>
+        <span class="why-number">
+          01
+        </span>
+
 
         <h3>
           Clear Communication
         </h3>
 
+
         <p>
-          Simple communication, clear project direction
-          and an organized development process.
+          Straightforward communication, clear expectations
+          and a professional project process.
         </p>
 
       </article>
@@ -691,15 +915,19 @@
 
       <article class="why-card">
 
-        <span>02</span>
+        <span class="why-number">
+          02
+        </span>
+
 
         <h3>
           Responsive First
         </h3>
 
+
         <p>
-          Websites are designed to work across desktop,
-          tablet and mobile screens.
+          Websites are designed to work smoothly across
+          desktop, tablet and mobile devices.
         </p>
 
       </article>
@@ -707,15 +935,19 @@
 
       <article class="why-card">
 
-        <span>03</span>
+        <span class="why-number">
+          03
+        </span>
+
 
         <h3>
           Detail Focused
         </h3>
 
+
         <p>
-          Attention to layout, spacing, typography,
-          usability and visual consistency.
+          Attention to spacing, typography, structure,
+          usability and overall presentation.
         </p>
 
       </article>
@@ -723,15 +955,19 @@
 
       <article class="why-card">
 
-        <span>04</span>
+        <span class="why-number">
+          04
+        </span>
+
 
         <h3>
           Growth Mindset
         </h3>
 
+
         <p>
-          Continuously improving technical skills and
-          exploring better ways to build digital products.
+          Continuously learning modern tools and improving
+          the quality of every digital project.
         </p>
 
       </article>
@@ -745,93 +981,118 @@
 
 
 
-<!-- =====================================================
+<!-- =======================================================
      PROCESS
-===================================================== -->
+======================================================= -->
 
-<section class="section process-section">
+<section class="process section">
 
   <div class="container">
 
-    <div class="split-heading">
 
-      <div>
+    <div class="section-heading center">
 
-        <div class="section-label">
-          PROCESS
-        </div>
-
-        <h2>
-          From idea
-          <span>to launch.</span>
-        </h2>
-
+      <div class="section-label">
+        My Process
       </div>
 
+
+      <h2>
+        From idea to
+        finished experience.
+      </h2>
+
+
+      <p>
+        A simple and transparent process designed to keep
+        projects organized and focused.
+      </p>
+
     </div>
+
 
 
     <div class="process-grid">
 
 
-      <div class="process-item">
+      <article class="process-step">
 
-        <span>01</span>
+        <span class="process-number">
+          01
+        </span>
+
 
         <h3>
           Discover
         </h3>
 
+
         <p>
-          Understand the project, goals and requirements.
+          Understand the business, audience, goals and
+          requirements.
         </p>
 
-      </div>
+      </article>
 
 
-      <div class="process-item">
+      <article class="process-step">
 
-        <span>02</span>
+        <span class="process-number">
+          02
+        </span>
+
 
         <h3>
           Plan
         </h3>
 
+
         <p>
-          Organize the structure, content and user experience.
+          Organize the structure, content, layout and
+          visual direction.
         </p>
 
-      </div>
+      </article>
 
 
-      <div class="process-item">
+      <article class="process-step">
 
-        <span>03</span>
+        <span class="process-number">
+          03
+        </span>
+
 
         <h3>
           Build
         </h3>
 
+
         <p>
-          Develop the responsive website and digital experience.
+          Develop the responsive website with clean,
+          practical implementation.
         </p>
 
-      </div>
+      </article>
 
 
-      <div class="process-item">
+      <article class="process-step">
 
-        <span>04</span>
+        <span class="process-number">
+          04
+        </span>
+
 
         <h3>
           Refine
         </h3>
 
+
         <p>
-          Test, improve and prepare the project for launch.
+          Test, improve, polish and prepare the final
+          experience for launch.
         </p>
 
-      </div>
+      </article>
 
 
     </div>
@@ -842,38 +1103,54 @@
 
 
 
-<!-- =====================================================
+<!-- =======================================================
      FINAL CTA
-===================================================== -->
+======================================================= -->
 
-<section class="section final-cta">
+<section class="final-cta">
 
   <div class="container">
 
+
     <div class="cta-box">
 
-      <div>
+
+      <div class="cta-content">
 
         <div class="section-label">
-          LET'S BUILD SOMETHING
+          Let's Build Something
         </div>
+
 
         <h2>
           Have an idea?
           <span>Let's make it real.</span>
         </h2>
 
+
         <p>
-          I'm open to remote opportunities, freelance projects
-          and collaborations where thoughtful digital work can
-          make a difference.
+          Open to remote opportunities, freelance projects
+          and meaningful digital collaborations.
         </p>
+
+
+        <div class="hero-actions">
+
+          <a href="contact.html" class="btn btn-primary">
+            Start a Project
+            <span aria-hidden="true">↗</span>
+          </a>
+
+
+          <a href="portfolio.html" class="btn btn-secondary">
+            Explore My Work
+            <span aria-hidden="true">→</span>
+          </a>
+
+        </div>
 
       </div>
 
-      <a href="contact.html" class="btn btn-primary">
-        Start a Conversation →
-      </a>
 
     </div>
 
@@ -886,104 +1163,170 @@
 
 
 
-<!-- =====================================================
+<!-- =======================================================
      FOOTER
-===================================================== -->
+======================================================= -->
 
-<footer class="site-footer">
+<footer>
 
-  <div class="container footer-grid">
+  <div class="footer-main">
+
+    <div class="container">
 
 
-    <div class="footer-brand">
+      <div class="footer-grid">
 
-      <a href="index.html" class="brand">
 
-        <span class="brand-mark">
-          AH
-        </span>
+        <div class="footer-brand">
 
-        <span class="brand-name">
-          Abdul Hafeez
-        </span>
+          <a href="index.html" class="brand">
 
-      </a>
+            <span class="brand-mark">
+              AH
+            </span>
 
-      <p>
-        Web Developer & Digital Solutions Specialist.
-      </p>
+            <span>
+              Abdul Hafeez
+            </span>
+
+          </a>
+
+
+          <p>
+            Web developer and digital solutions specialist
+            creating modern, responsive and purposeful
+            digital experiences.
+          </p>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+          <h4>
+            Navigation
+          </h4>
+
+
+          <ul>
+
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="about.html">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html">
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a href="portfolio.html">
+                Portfolio
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+          <h4>
+            Explore
+          </h4>
+
+
+          <ul>
+
+            <li>
+              <a href="skills.html">
+                Skills
+              </a>
+            </li>
+
+            <li>
+              <a href="experience.html">
+                Experience
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+          <h4>
+            Services
+          </h4>
+
+
+          <ul>
+
+            <li>
+              <a href="services.html">
+                Website Development
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html">
+                Ecommerce
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html">
+                Responsive Design
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html">
+                SEO Foundations
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+      </div>
 
     </div>
-
-
-    <div class="footer-links">
-
-      <h4>
-        NAVIGATION
-      </h4>
-
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="skills.html">Skills</a>
-      <a href="experience.html">Experience</a>
-      <a href="contact.html">Contact</a>
-
-    </div>
-
-
-    <div class="footer-links">
-
-      <h4>
-        SERVICES
-      </h4>
-
-      <a href="services.html">
-        Website Development
-      </a>
-
-      <a href="services.html">
-        Ecommerce
-      </a>
-
-      <a href="services.html">
-        Responsive Design
-      </a>
-
-      <a href="services.html">
-        SEO Foundations
-      </a>
-
-    </div>
-
-
-    <div class="footer-contact">
-
-      <h4>
-        LET'S CONNECT
-      </h4>
-
-      <p>
-        Available for remote projects,
-        freelance opportunities and collaborations.
-      </p>
-
-      <a href="contact.html" class="footer-contact-link">
-        Contact Me →
-      </a>
-
-    </div>
-
 
   </div>
 
 
-  <div class="container">
 
-    <div class="footer-bottom">
+  <div class="footer-bottom">
 
-      © 2026 Abdul Hafeez. All rights reserved.
+    <div class="container">
+
+      <p>
+        © 2026 Abdul Hafeez. All rights reserved.
+      </p>
 
     </div>
 
@@ -993,46 +1336,67 @@
 
 
 
+<!-- =======================================================
+     MOBILE NAVIGATION SCRIPT
+======================================================= -->
+
 <script>
 
-const menuToggle = document.querySelector(".menu-toggle");
-const mainNavigation = document.querySelector("#main-navigation");
+  const mobileToggle =
+    document.querySelector(".mobile-toggle");
 
-if (menuToggle && mainNavigation) {
-
-  menuToggle.addEventListener("click", function () {
-
-    const isOpen =
-      mainNavigation.classList.toggle("open");
-
-    menuToggle.setAttribute(
-      "aria-expanded",
-      isOpen ? "true" : "false"
-    );
-
-  });
+  const navigation =
+    document.querySelector("#main-navigation");
 
 
-  mainNavigation
-    .querySelectorAll("a")
-    .forEach(function (link) {
+  if (mobileToggle && navigation) {
 
-      link.addEventListener("click", function () {
+    mobileToggle.addEventListener("click", function () {
 
-        mainNavigation.classList.remove("open");
+      const isOpen =
+        navigation.classList.toggle("open");
 
-        menuToggle.setAttribute(
-          "aria-expanded",
-          "false"
-        );
+      mobileToggle.setAttribute(
+        "aria-expanded",
+        isOpen
+      );
 
-      });
+      mobileToggle.setAttribute(
+        "aria-label",
+        isOpen
+          ? "Close navigation"
+          : "Open navigation"
+      );
 
     });
 
-}
+
+    navigation
+      .querySelectorAll("a")
+      .forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+          navigation.classList.remove("open");
+
+          mobileToggle.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+          mobileToggle.setAttribute(
+            "aria-label",
+            "Open navigation"
+          );
+
+        });
+
+      });
+
+  }
 
 </script>
+
 
 </body>
 </html>
