@@ -1,890 +1,1038 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Abdul Hafeez | Web Developer & Digital Solutions Specialist</title>
 
-  <meta name="description" content="Abdul Hafeez is a web developer and digital solutions specialist creating modern, responsive and professional websites for businesses, brands and remote clients.">
+  <meta name="description"
+        content="Abdul Hafeez is a web developer and digital solutions specialist building modern, responsive websites and digital experiences for ambitious businesses.">
 
-  <meta name="keywords" content="Abdul Hafeez, Web Developer, Website Development, Frontend Developer, HTML CSS JavaScript, Digital Marketing, Remote Web Developer, Portfolio">
+  <meta name="keywords"
+        content="Abdul Hafeez, web developer, website development, responsive websites, Shopify, WooCommerce, SEO, digital solutions">
 
   <meta name="author" content="Abdul Hafeez">
   <meta name="robots" content="index, follow">
 
-  <meta property="og:title" content="Abdul Hafeez | Web Developer & Digital Solutions Specialist">
-  <meta property="og:description" content="Professional web development, digital solutions and modern responsive websites for businesses and remote clients.">
+  <meta property="og:title"
+        content="Abdul Hafeez | Web Developer & Digital Solutions Specialist">
+
+  <meta property="og:description"
+        content="Modern websites and digital solutions designed with clarity, performance and purpose.">
+
   <meta property="og:type" content="website">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Master Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- =====================================================
-       HEADER
-  ====================================================== -->
+<header class="site-header">
 
-  <header class="site-header">
+  <div class="container nav-container">
 
-    <div class="container nav-container">
+    <a href="index.html" class="brand" aria-label="Abdul Hafeez Home">
 
-      <a href="index.html" class="brand" aria-label="Abdul Hafeez Home">
-        <span class="brand-mark">AH</span>
-        <span class="brand-name">Abdul Hafeez</span>
+      <span class="brand-mark">AH</span>
+
+      <span class="brand-name">
+        Abdul Hafeez
+      </span>
+
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="main-navigation">
+      ☰
+    </button>
+
+    <nav class="main-nav" id="main-navigation">
+
+      <a href="index.html" class="active">Home</a>
+
+      <a href="about.html">About</a>
+
+      <a href="services.html">Services</a>
+
+      <a href="portfolio.html">Portfolio</a>
+
+      <a href="skills.html">Skills</a>
+
+      <a href="experience.html">Experience</a>
+
+      <a href="contact.html">Contact</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+  <div class="container hero-grid">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        WEB DEVELOPMENT
+        <span></span>
+        DIGITAL SOLUTIONS
+      </div>
+
+      <h1>
+        Building digital
+        <span>experiences</span>
+        that stand out.
+      </h1>
+
+      <p class="hero-text">
+        I'm Abdul Hafeez, a web developer focused on creating
+        modern, responsive and purposeful digital experiences
+        for businesses, brands and ambitious projects.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="portfolio.html" class="btn btn-primary">
+          View My Work
+          <span>↗</span>
+        </a>
+
+        <a href="contact.html" class="btn btn-secondary">
+          Let's Work Together
+        </a>
+
+      </div>
+
+      <div class="hero-trust">
+
+        <div>
+          <strong>01</strong>
+          <span>Creative Development</span>
+        </div>
+
+        <div>
+          <strong>02</strong>
+          <span>Responsive Design</span>
+        </div>
+
+        <div>
+          <strong>03</strong>
+          <span>Digital Solutions</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- HERO VISUAL -->
+
+    <div class="hero-visual">
+
+      <div class="hero-card">
+
+        <div class="hero-card-top">
+
+          <span>01</span>
+
+          <span>WEB EXPERIENCE</span>
+
+        </div>
+
+        <div class="hero-card-main">
+
+          <div class="hero-card-symbol">
+            AH
+          </div>
+
+          <div class="hero-card-lines">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </div>
+
+        </div>
+
+        <div class="hero-card-bottom">
+
+          <span>DESIGN</span>
+          <span>DEVELOPMENT</span>
+          <span>STRATEGY</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="floating-card floating-card-one">
+
+        <strong>HTML</strong>
+        <span>Structure</span>
+
+      </div>
+
+
+      <div class="floating-card floating-card-two">
+
+        <strong>CSS</strong>
+        <span>Interface</span>
+
+      </div>
+
+
+      <div class="red-orb"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT PREVIEW
+===================================================== -->
+
+<section class="section about-preview">
+
+  <div class="container two-column">
+
+    <div>
+
+      <div class="section-label">
+        ABOUT ME
+      </div>
+
+      <h2>
+        Turning ideas into
+        <span>digital experiences.</span>
+      </h2>
+
+    </div>
+
+
+    <div class="about-preview-content">
+
+      <p>
+        I build websites and digital experiences with a strong
+        focus on clean design, responsive layouts and practical
+        functionality.
+      </p>
+
+      <p>
+        My approach combines frontend development, ecommerce,
+        SEO foundations and digital setup to help transform
+        ideas into professional online experiences.
+      </p>
+
+      <a href="about.html" class="text-link">
+        More About Me →
       </a>
 
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Open navigation"
-        aria-expanded="false"
-        aria-controls="main-navigation">
-        ☰
-      </button>
+    </div>
 
-      <nav class="main-nav" id="main-navigation">
+  </div>
 
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="skills.html">Skills</a>
-        <a href="experience.html">Experience</a>
-        <a href="contact.html">Contact</a>
+</section>
 
-      </nav>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="section services-section">
+
+  <div class="container">
+
+    <div class="split-heading">
+
+      <div>
+
+        <div class="section-label">
+          SERVICES
+        </div>
+
+        <h2>
+          Digital solutions
+          <span>built with purpose.</span>
+        </h2>
+
+      </div>
+
+      <a href="services.html" class="text-link">
+        Explore Services →
+      </a>
 
     </div>
 
-  </header>
+
+    <div class="service-grid">
 
 
-  <main>
+      <article class="service-card">
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
-
-    <section class="hero">
-
-      <div class="container hero-grid">
-
-        <div class="hero-content">
-
-          <p class="eyebrow">
-            WEB DEVELOPMENT • DIGITAL SOLUTIONS
-          </p>
-
-          <h1>
-            Building modern digital experiences
-            <span>for ambitious businesses.</span>
-          </h1>
-
-          <p class="hero-text">
-            I'm <strong>Abdul Hafeez</strong>, a web developer focused on
-            creating clean, responsive and professional websites that help
-            businesses establish a stronger digital presence.
-          </p>
-
-          <div class="hero-buttons">
-
-            <a href="portfolio.html" class="btn btn-primary">
-              View My Work
-            </a>
-
-            <a href="contact.html" class="btn btn-secondary">
-              Let's Work Together
-            </a>
-
-          </div>
-
-          <div class="hero-trust">
-
-            <div>
-              <strong>01</strong>
-              <span>Professional Approach</span>
-            </div>
-
-            <div>
-              <strong>02</strong>
-              <span>Responsive Development</span>
-            </div>
-
-            <div>
-              <strong>03</strong>
-              <span>Remote Collaboration</span>
-            </div>
-
-          </div>
-
+        <div class="service-number">
+          01
         </div>
 
-
-        <!-- CODE SHOWCASE -->
-
-        <div class="hero-card">
-
-          <div class="code-window">
-
-            <div class="window-top">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-
-            <div class="code-content">
-
-              <p>
-                <span class="code-purple">const</span>
-                developer =
-                <span class="code-green">"Abdul Hafeez"</span>;
-              </p>
-
-              <p>
-                <span class="code-purple">const</span>
-                focus = [
-              </p>
-
-              <p class="indent">
-                <span class="code-green">"Web Development"</span>,
-              </p>
-
-              <p class="indent">
-                <span class="code-green">"Digital Solutions"</span>,
-              </p>
-
-              <p class="indent">
-                <span class="code-green">"Responsive Design"</span>,
-              </p>
-
-              <p class="indent">
-                <span class="code-green">"Business Websites"</span>
-              </p>
-
-              <p>];</p>
-
-              <br>
-
-              <p>
-                <span class="code-purple">return</span>
-                <span class="code-blue">results</span>;
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="hero-card-bottom">
-
-            <div>
-              <small>AVAILABLE FOR</small>
-              <strong>Remote Projects</strong>
-            </div>
-
-            <div class="availability">
-              <span></span>
-              Available
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         ABOUT PREVIEW
-    ====================================================== -->
-
-    <section class="section about-preview">
-
-      <div class="container two-column">
-
-        <div>
-
-          <p class="section-label">
-            ABOUT ME
-          </p>
-
-          <h2>
-            Turning ideas into
-            <span>professional websites.</span>
-          </h2>
-
-        </div>
-
-        <div>
-
-          <p>
-            I build modern web experiences with a focus on clean structure,
-            responsive layouts, usability and professional presentation.
-          </p>
-
-          <p>
-            My goal is simple: understand the business objective, create a
-            strong digital experience and deliver a website that looks
-            professional across desktop and mobile devices.
-          </p>
-
-          <a href="about.html" class="text-link">
-            More About Me →
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         SERVICES
-    ====================================================== -->
-
-    <section class="section services-section">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <p class="section-label">
-            SERVICES
-          </p>
-
-          <h2>
-            Digital solutions built
-            <span>around your goals.</span>
-          </h2>
-
-          <p>
-            Choose the level of support that matches your project.
-          </p>
-
-        </div>
-
-
-        <div class="service-grid">
-
-          <article class="service-card">
-
-            <span class="service-number">01</span>
-
-            <h3>Basic</h3>
-
-            <p class="price">
-              Starting from $99
-            </p>
-
-            <p>
-              A clean and professional website solution for individuals,
-              small businesses and simple online projects.
-            </p>
-
-            <a href="services.html">
-              Explore Service →
-            </a>
-
-          </article>
-
-
-          <article class="service-card featured">
-
-            <span class="service-number">02</span>
-
-            <p class="popular">
-              MOST POPULAR
-            </p>
-
-            <h3>Standard</h3>
-
-            <p class="price">
-              Starting from $249
-            </p>
-
-            <p>
-              A complete responsive website with professional structure,
-              multiple pages, SEO foundations and polished presentation.
-            </p>
-
-            <a href="services.html">
-              Explore Service →
-            </a>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span class="service-number">03</span>
-
-            <h3>Premium</h3>
-
-            <p class="price">
-              Starting from $499
-            </p>
-
-            <p>
-              An advanced business website experience designed for brands,
-              companies and organizations that need a stronger digital
-              presence.
-            </p>
-
-            <a href="services.html">
-              Explore Service →
-            </a>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         FEATURED PORTFOLIO
-    ====================================================== -->
-
-    <section class="section portfolio-preview">
-
-      <div class="container">
-
-        <div class="section-heading split-heading">
-
-          <div>
-
-            <p class="section-label">
-              SELECTED WORK
-            </p>
-
-            <h2>
-              Projects that demonstrate
-              <span>practical development.</span>
-            </h2>
-
-          </div>
-
-          <a href="portfolio.html" class="btn btn-secondary">
-            View All Projects
-          </a>
-
-        </div>
-
-
-        <div class="project-grid">
-
-          <!-- PROJECT 01 -->
-
-          <article class="project-card">
-
-            <div class="project-visual martza">
-              <span>MY MARTZA</span>
-            </div>
-
-            <div class="project-info">
-
-              <p class="project-category">
-                BUSINESS WEBSITE
-              </p>
-
-              <h3>
-                MY Martza / Export Premium Quality Rice
-              </h3>
-
-              <p>
-                A professional business-focused web experience designed
-                around product presentation, brand credibility and clear
-                customer navigation.
-              </p>
-
-              <a href="portfolio.html">
-                View Case Study →
-              </a>
-
-            </div>
-
-          </article>
-
-
-          <!-- PROJECT 02 -->
-
-          <article class="project-card">
-
-            <div class="project-visual ecommerce">
-              <span>ECOMMERCE</span>
-            </div>
-
-            <div class="project-info">
-
-              <p class="project-category">
-                ECOMMERCE PROJECT
-              </p>
-
-              <h3>
-                Trove Beauty Co.
-              </h3>
-
-              <p>
-                A beauty ecommerce project focused on product presentation,
-                responsive storefront design, navigation, policies and
-                customer experience.
-              </p>
-
-              <a href="portfolio.html">
-                View Case Study →
-              </a>
-
-            </div>
-
-          </article>
-
-
-          <!-- PROJECT 03 -->
-
-          <article class="project-card">
-
-            <div class="project-visual web">
-              <span>WEB SOLUTION</span>
-            </div>
-
-            <div class="project-info">
-
-              <p class="project-category">
-                WEB DEVELOPMENT
-              </p>
-
-              <h3>
-                Business Web Experience
-              </h3>
-
-              <p>
-                A modern responsive website concept demonstrating structured
-                frontend development, usability and professional presentation.
-              </p>
-
-              <a href="portfolio.html">
-                View Case Study →
-              </a>
-
-            </div>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         SKILLS
-    ====================================================== -->
-
-    <section class="section skills-preview">
-
-      <div class="container two-column">
-
-        <div>
-
-          <p class="section-label">
-            SKILLS & TECHNOLOGIES
-          </p>
-
-          <h2>
-            A practical toolkit for
-            <span>modern web projects.</span>
-          </h2>
-
-          <p>
-            I continuously develop my skills through practical projects,
-            real ecommerce work and hands-on website development.
-          </p>
-
-          <a href="skills.html" class="text-link">
-            Explore My Skills →
-          </a>
-
-        </div>
-
-
-        <div class="skills-list">
-
-          <div class="skill-item">
-            <span>HTML</span>
-            <strong>01</strong>
-          </div>
-
-          <div class="skill-item">
-            <span>CSS</span>
-            <strong>02</strong>
-          </div>
-
-          <div class="skill-item">
-            <span>JavaScript</span>
-            <strong>03</strong>
-          </div>
-
-          <div class="skill-item">
-            <span>Responsive Web Design</span>
-            <strong>04</strong>
-          </div>
-
-          <div class="skill-item">
-            <span>Shopify</span>
-            <strong>05</strong>
-          </div>
-
-          <div class="skill-item">
-            <span>SEO Foundations</span>
-            <strong>06</strong>
-          </div>
-
-          <div class="skill-item">
-            <span>Digital Marketing</span>
-            <strong>07</strong>
-          </div>
-
-          <div class="skill-item">
-            <span>GitHub</span>
-            <strong>08</strong>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         WHY WORK WITH ME
-    ====================================================== -->
-
-    <section class="section why-section">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <p class="section-label">
-            WHY WORK WITH ME
-          </p>
-
-          <h2>
-            Professional thinking behind
-            <span>every project.</span>
-          </h2>
-
-        </div>
-
-
-        <div class="why-grid">
-
-          <div class="why-item">
-
-            <span>01</span>
-
-            <h3>Business First</h3>
-
-            <p>
-              I focus on the purpose behind a website, not only its visual
-              appearance.
-            </p>
-
-          </div>
-
-
-          <div class="why-item">
-
-            <span>02</span>
-
-            <h3>Responsive by Design</h3>
-
-            <p>
-              Websites are structured to provide a strong experience across
-              desktop, tablet and mobile screens.
-            </p>
-
-          </div>
-
-
-          <div class="why-item">
-
-            <span>03</span>
-
-            <h3>Clear Communication</h3>
-
-            <p>
-              Project requirements, revisions and deliverables are kept clear
-              throughout the development process.
-            </p>
-
-          </div>
-
-
-          <div class="why-item">
-
-            <span>04</span>
-
-            <h3>Continuous Learning</h3>
-
-            <p>
-              I continuously improve my development and digital skills through
-              practical projects and real-world implementation.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         PROCESS
-    ====================================================== -->
-
-    <section class="section process-section">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <p class="section-label">
-            MY PROCESS
-          </p>
-
-          <h2>
-            From idea to
-            <span>finished website.</span>
-          </h2>
-
-        </div>
-
-
-        <div class="process-grid">
-
-          <div class="process-step">
-
-            <strong>01</strong>
-
-            <h3>Discover</h3>
-
-            <p>
-              Understand the business, audience, goals and project
-              requirements.
-            </p>
-
-          </div>
-
-
-          <div class="process-step">
-
-            <strong>02</strong>
-
-            <h3>Plan</h3>
-
-            <p>
-              Structure the pages, content, user journey and technical
-              requirements.
-            </p>
-
-          </div>
-
-
-          <div class="process-step">
-
-            <strong>03</strong>
-
-            <h3>Build</h3>
-
-            <p>
-              Develop the responsive website with clean and organized
-              frontend structure.
-            </p>
-
-          </div>
-
-
-          <div class="process-step">
-
-            <strong>04</strong>
-
-            <h3>Refine</h3>
-
-            <p>
-              Test, improve, revise and prepare the final website for launch.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         FINAL CTA
-    ====================================================== -->
-
-    <section class="section experience-cta">
-
-      <div class="container cta-box">
-
-        <div>
-
-          <p class="section-label">
-            READY TO BUILD?
-          </p>
-
-          <h2>
-            Let's create something
-            <span>professional together.</span>
-          </h2>
-
-          <p>
-            Whether you need a business website, ecommerce experience or
-            digital solution, let's discuss your project.
-          </p>
-
-        </div>
-
-        <a href="contact.html" class="btn btn-primary">
-          Start a Conversation
-        </a>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- =====================================================
-       FOOTER
-  ====================================================== -->
-
-  <footer class="site-footer">
-
-    <div class="container footer-grid">
-
-      <div class="footer-brand">
-
-        <a href="index.html" class="brand">
-          <span class="brand-mark">AH</span>
-          <span class="brand-name">Abdul Hafeez</span>
-        </a>
+        <h3>
+          Starter
+        </h3>
 
         <p>
-          Web development and digital solutions for businesses,
-          brands and remote clients.
+          A clean and responsive website for individuals,
+          small businesses and simple projects.
+        </p>
+
+        <div class="price">
+          Starting at $99
+        </div>
+
+        <a href="services.html">
+          View Package →
+        </a>
+
+      </article>
+
+
+
+      <article class="service-card featured">
+
+        <div class="service-number">
+          02
+        </div>
+
+        <div class="popular">
+          MOST POPULAR
+        </div>
+
+        <h3>
+          Standard
+        </h3>
+
+        <p>
+          A professional multi-page website designed for
+          businesses that need a stronger online presence.
+        </p>
+
+        <div class="price">
+          Starting at $249
+        </div>
+
+        <a href="services.html">
+          View Package →
+        </a>
+
+      </article>
+
+
+
+      <article class="service-card">
+
+        <div class="service-number">
+          03
+        </div>
+
+        <h3>
+          Premium
+        </h3>
+
+        <p>
+          An advanced digital experience with expanded pages,
+          refined design and more customization.
+        </p>
+
+        <div class="price">
+          Starting at $499
+        </div>
+
+        <a href="services.html">
+          View Package →
+        </a>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FEATURED WORK
+===================================================== -->
+
+<section class="section portfolio-preview">
+
+  <div class="container">
+
+    <div class="split-heading">
+
+      <div>
+
+        <div class="section-label">
+          SELECTED WORK
+        </div>
+
+        <h2>
+          Projects that
+          <span>show what I build.</span>
+        </h2>
+
+      </div>
+
+      <a href="portfolio.html" class="text-link">
+        View Full Portfolio →
+      </a>
+
+    </div>
+
+
+    <div class="project-grid">
+
+
+      <!-- PROJECT 1 -->
+
+      <article class="project-card">
+
+        <div class="project-visual project-red">
+
+          <div class="project-mark">
+            MM
+          </div>
+
+          <span>
+            EXPORT
+          </span>
+
+        </div>
+
+        <div class="project-info">
+
+          <div class="project-category">
+            BUSINESS WEBSITE
+          </div>
+
+          <h3>
+            MY Martza / Export Premium Quality Rice
+          </h3>
+
+          <p>
+            A professional digital experience created
+            around a premium rice export business.
+          </p>
+
+          <a href="portfolio.html">
+            Explore Project →
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- PROJECT 2 -->
+
+      <article class="project-card">
+
+        <div class="project-visual project-black">
+
+          <div class="project-browser">
+
+            <div class="browser-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="browser-body">
+
+              <strong>
+                TROVE
+              </strong>
+
+              <small>
+                BEAUTY CO.
+              </small>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="project-info">
+
+          <div class="project-category">
+            ECOMMERCE
+          </div>
+
+          <h3>
+            Trove Beauty Co.
+          </h3>
+
+          <p>
+            A beauty ecommerce experience combining
+            product presentation, responsive design and
+            digital commerce setup.
+          </p>
+
+          <a href="portfolio.html">
+            Explore Project →
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- PROJECT 3 -->
+
+      <article class="project-card">
+
+        <div class="project-visual project-outline">
+
+          <div class="business-layout">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <div></div>
+
+          </div>
+
+        </div>
+
+        <div class="project-info">
+
+          <div class="project-category">
+            WEB DEVELOPMENT
+          </div>
+
+          <h3>
+            Business Web Experience
+          </h3>
+
+          <p>
+            A modern website concept focused on clear
+            information architecture and responsive presentation.
+          </p>
+
+          <a href="portfolio.html">
+            Explore Project →
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<section class="section skills-preview">
+
+  <div class="container two-column">
+
+    <div>
+
+      <div class="section-label">
+        SKILLS
+      </div>
+
+      <h2>
+        The tools behind
+        <span>the work.</span>
+      </h2>
+
+      <p>
+        A growing technical toolkit focused on practical
+        web development and digital solutions.
+      </p>
+
+      <a href="skills.html" class="text-link">
+        Explore My Skills →
+      </a>
+
+    </div>
+
+
+    <div class="skills-list">
+
+      <div class="skill-item">
+        <span>HTML</span>
+        <strong>01</strong>
+      </div>
+
+      <div class="skill-item">
+        <span>CSS</span>
+        <strong>02</strong>
+      </div>
+
+      <div class="skill-item">
+        <span>JavaScript</span>
+        <strong>03</strong>
+      </div>
+
+      <div class="skill-item">
+        <span>Responsive Web Design</span>
+        <strong>04</strong>
+      </div>
+
+      <div class="skill-item">
+        <span>Shopify</span>
+        <strong>05</strong>
+      </div>
+
+      <div class="skill-item">
+        <span>WooCommerce</span>
+        <strong>06</strong>
+      </div>
+
+      <div class="skill-item">
+        <span>SEO Foundations</span>
+        <strong>07</strong>
+      </div>
+
+      <div class="skill-item">
+        <span>GitHub</span>
+        <strong>08</strong>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHY WORK WITH ME
+===================================================== -->
+
+<section class="section why-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="section-label">
+        WHY WORK WITH ME
+      </div>
+
+      <h2>
+        Professional thinking.
+        <span>Practical execution.</span>
+      </h2>
+
+    </div>
+
+
+    <div class="why-grid">
+
+
+      <article class="why-card">
+
+        <span>01</span>
+
+        <h3>
+          Clear Communication
+        </h3>
+
+        <p>
+          Simple communication, clear project direction
+          and an organized development process.
+        </p>
+
+      </article>
+
+
+      <article class="why-card">
+
+        <span>02</span>
+
+        <h3>
+          Responsive First
+        </h3>
+
+        <p>
+          Websites are designed to work across desktop,
+          tablet and mobile screens.
+        </p>
+
+      </article>
+
+
+      <article class="why-card">
+
+        <span>03</span>
+
+        <h3>
+          Detail Focused
+        </h3>
+
+        <p>
+          Attention to layout, spacing, typography,
+          usability and visual consistency.
+        </p>
+
+      </article>
+
+
+      <article class="why-card">
+
+        <span>04</span>
+
+        <h3>
+          Growth Mindset
+        </h3>
+
+        <p>
+          Continuously improving technical skills and
+          exploring better ways to build digital products.
+        </p>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROCESS
+===================================================== -->
+
+<section class="section process-section">
+
+  <div class="container">
+
+    <div class="split-heading">
+
+      <div>
+
+        <div class="section-label">
+          PROCESS
+        </div>
+
+        <h2>
+          From idea
+          <span>to launch.</span>
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="process-grid">
+
+
+      <div class="process-item">
+
+        <span>01</span>
+
+        <h3>
+          Discover
+        </h3>
+
+        <p>
+          Understand the project, goals and requirements.
         </p>
 
       </div>
 
 
-      <div class="footer-links">
+      <div class="process-item">
 
-        <h4>Navigation</h4>
+        <span>02</span>
 
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="skills.html">Skills</a>
-        <a href="experience.html">Experience</a>
-        <a href="contact.html">Contact</a>
-
-      </div>
-
-
-      <div class="footer-links">
-
-        <h4>Services</h4>
-
-        <a href="services.html">Website Development</a>
-        <a href="services.html">Responsive Design</a>
-        <a href="services.html">Ecommerce Websites</a>
-        <a href="services.html">Digital Solutions</a>
-        <a href="services.html">SEO Foundations</a>
-
-      </div>
-
-
-      <div class="footer-contact">
-
-        <h4>Let's Connect</h4>
+        <h3>
+          Plan
+        </h3>
 
         <p>
-          Available for remote opportunities,
-          freelance projects and professional collaborations.
+          Organize the structure, content and user experience.
         </p>
-
-        <a href="contact.html" class="footer-contact-link">
-          Contact Abdul Hafeez →
-        </a>
 
       </div>
 
+
+      <div class="process-item">
+
+        <span>03</span>
+
+        <h3>
+          Build
+        </h3>
+
+        <p>
+          Develop the responsive website and digital experience.
+        </p>
+
+      </div>
+
+
+      <div class="process-item">
+
+        <span>04</span>
+
+        <h3>
+          Refine
+        </h3>
+
+        <p>
+          Test, improve and prepare the project for launch.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FINAL CTA
+===================================================== -->
+
+<section class="section final-cta">
+
+  <div class="container">
+
+    <div class="cta-box">
+
+      <div>
+
+        <div class="section-label">
+          LET'S BUILD SOMETHING
+        </div>
+
+        <h2>
+          Have an idea?
+          <span>Let's make it real.</span>
+        </h2>
+
+        <p>
+          I'm open to remote opportunities, freelance projects
+          and collaborations where thoughtful digital work can
+          make a difference.
+        </p>
+
+      </div>
+
+      <a href="contact.html" class="btn btn-primary">
+        Start a Conversation →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+  <div class="container footer-grid">
+
+
+    <div class="footer-brand">
+
+      <a href="index.html" class="brand">
+
+        <span class="brand-mark">
+          AH
+        </span>
+
+        <span class="brand-name">
+          Abdul Hafeez
+        </span>
+
+      </a>
+
+      <p>
+        Web Developer & Digital Solutions Specialist.
+      </p>
+
     </div>
 
 
-    <div class="container footer-bottom">
+    <div class="footer-links">
 
-      <p>
-        © 2026 Abdul Hafeez. All rights reserved.
-      </p>
+      <h4>
+        NAVIGATION
+      </h4>
 
-      <p>
-        Built with HTML, CSS & JavaScript.
-      </p>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
 
     </div>
 
-  </footer>
+
+    <div class="footer-links">
+
+      <h4>
+        SERVICES
+      </h4>
+
+      <a href="services.html">
+        Website Development
+      </a>
+
+      <a href="services.html">
+        Ecommerce
+      </a>
+
+      <a href="services.html">
+        Responsive Design
+      </a>
+
+      <a href="services.html">
+        SEO Foundations
+      </a>
+
+    </div>
 
 
-  <!-- =====================================================
-       MOBILE NAVIGATION
-  ====================================================== -->
+    <div class="footer-contact">
 
-  <script>
-    const menuToggle = document.querySelector(".menu-toggle");
-    const mainNav = document.querySelector(".main-nav");
+      <h4>
+        LET'S CONNECT
+      </h4>
 
-    menuToggle.addEventListener("click", function () {
-      const isOpen = mainNav.classList.toggle("open");
+      <p>
+        Available for remote projects,
+        freelance opportunities and collaborations.
+      </p>
 
-      menuToggle.setAttribute(
-        "aria-expanded",
-        isOpen ? "true" : "false"
-      );
-    });
+      <a href="contact.html" class="footer-contact-link">
+        Contact Me →
+      </a>
 
-    document.querySelectorAll(".main-nav a").forEach(function (link) {
+    </div>
+
+
+  </div>
+
+
+  <div class="container">
+
+    <div class="footer-bottom">
+
+      © 2026 Abdul Hafeez. All rights reserved.
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<script>
+
+const menuToggle = document.querySelector(".menu-toggle");
+const mainNavigation = document.querySelector("#main-navigation");
+
+if (menuToggle && mainNavigation) {
+
+  menuToggle.addEventListener("click", function () {
+
+    const isOpen =
+      mainNavigation.classList.toggle("open");
+
+    menuToggle.setAttribute(
+      "aria-expanded",
+      isOpen ? "true" : "false"
+    );
+
+  });
+
+
+  mainNavigation
+    .querySelectorAll("a")
+    .forEach(function (link) {
+
       link.addEventListener("click", function () {
-        mainNav.classList.remove("open");
-        menuToggle.setAttribute("aria-expanded", "false");
+
+        mainNavigation.classList.remove("open");
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
       });
+
     });
-  </script>
+
+}
+
+</script>
 
 </body>
 </html>
