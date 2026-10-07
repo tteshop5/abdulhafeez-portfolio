@@ -41,16 +41,18 @@ button {
 /* ---------- GLOBAL ---------- */
 
 :root {
-  --black: #111111;
-  --dark: #191919;
-  --text: #252525;
-  --muted: #707070;
-  --light: #f7f5f1;
-  --white: #ffffff;
-  --border: #dedbd5;
-  --soft: #ebe8e1;
-  --accent: #9b7653;
-  --accent-dark: #76583d;
+  --black: #080B12;
+  --dark: #111827;
+  --text: #F8FAFC;
+  --muted: #94A3B8;
+  --light: #0B1220;
+  --white: #F8FAFC;
+  --border: #1E293B;
+  --soft: #172033;
+  --accent: #2563EB;
+  --accent-dark: #1D4ED8;
+  --cyan: #06B6D4;
+}
 }
 
 .container {
