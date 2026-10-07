@@ -1099,7 +1099,7 @@ button {
 
 }
 /* =========================================================
-   SERVICES PAGE — PREMIUM PRICING & SERVICE STYLES
+   SERVICES PAGE — PREMIUM STYLES
    ========================================================= */
 
 .services-hero{
@@ -1114,10 +1114,12 @@ button {
   height:420px;
   right:-180px;
   top:-160px;
-  border:1px solid rgba(255,255,255,.12);
+  border:1px solid rgba(155,118,83,.18);
   border-radius:50%;
   pointer-events:none;
 }
+
+/* SERVICE CARDS */
 
 .service-grid{
   display:grid;
@@ -1129,17 +1131,18 @@ button {
 .service-card{
   position:relative;
   padding:32px;
-  border:1px solid rgba(41,35,31,.12);
+  border:1px solid var(--border);
   border-radius:20px;
-  background:rgba(255,255,255,.72);
-  box-shadow:0 15px 45px rgba(41,35,31,.06);
-  transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+  background:var(--white);
+  color:var(--text);
+  box-shadow:0 15px 45px rgba(17,17,17,.06);
+  transition:.3s ease;
 }
 
 .service-card:hover{
   transform:translateY(-6px);
-  box-shadow:0 22px 55px rgba(41,35,31,.12);
-  border-color:rgba(185,132,115,.45);
+  box-shadow:0 22px 55px rgba(17,17,17,.12);
+  border-color:var(--accent);
 }
 
 .service-number{
@@ -1147,10 +1150,11 @@ button {
   letter-spacing:.15em;
   font-weight:700;
   margin-bottom:35px;
-  opacity:.55;
+  color:var(--accent);
 }
 
 .service-card h3{
+  color:var(--text);
   margin-bottom:14px;
 }
 
@@ -1164,10 +1168,13 @@ button {
   margin-top:25px;
   padding:8px 12px;
   border-radius:999px;
-  background:var(--sand);
+  background:var(--soft);
+  color:var(--text);
   font-size:12px;
   font-weight:600;
 }
+
+/* PRICING */
 
 .pricing-section{
   overflow:hidden;
@@ -1177,10 +1184,10 @@ button {
   width:100%;
   overflow-x:auto;
   margin-top:45px;
-  border:1px solid rgba(41,35,31,.12);
+  border:1px solid var(--border);
   border-radius:20px;
   background:var(--white);
-  box-shadow:0 20px 60px rgba(41,35,31,.07);
+  box-shadow:0 20px 60px rgba(17,17,17,.07);
 }
 
 .pricing-table{
@@ -1188,12 +1195,13 @@ button {
   min-width:780px;
   border-collapse:collapse;
   text-align:center;
+  color:var(--text);
 }
 
 .pricing-table th,
 .pricing-table td{
   padding:22px 20px;
-  border-bottom:1px solid rgba(41,35,31,.09);
+  border-bottom:1px solid var(--border);
 }
 
 .pricing-table th:first-child,
@@ -1205,13 +1213,15 @@ button {
 .pricing-table th{
   font-size:17px;
   vertical-align:top;
-  background:var(--paper);
+  background:var(--light);
+  color:var(--text);
 }
 
 .pricing-table th strong{
   display:block;
   margin-top:10px;
   font-size:30px;
+  color:var(--accent-dark);
 }
 
 .pricing-table td{
@@ -1219,11 +1229,11 @@ button {
 }
 
 .pricing-table tbody tr:hover{
-  background:rgba(250,248,244,.8);
+  background:var(--light);
 }
 
 .pricing-table .featured-column{
-  background:rgba(185,132,115,.10);
+  background:rgba(155,118,83,.10);
 }
 
 .pricing-actions td{
@@ -1242,13 +1252,15 @@ button {
   font-size:13px;
 }
 
+/* PACKAGE CARDS */
+
 .package-grid{
   margin-top:45px;
 }
 
 .featured-card{
-  border-color:rgba(185,132,115,.55);
-  box-shadow:0 20px 55px rgba(185,132,115,.13);
+  border-color:var(--accent);
+  box-shadow:0 20px 55px rgba(155,118,83,.13);
 }
 
 .card-label{
@@ -1256,6 +1268,7 @@ button {
   letter-spacing:.16em;
   font-weight:800;
   margin-bottom:12px !important;
+  color:var(--accent-dark) !important;
 }
 
 .feature-list{
@@ -1266,7 +1279,7 @@ button {
 
 .feature-list li{
   padding:11px 0;
-  border-bottom:1px solid rgba(41,35,31,.08);
+  border-bottom:1px solid var(--border);
   color:var(--muted);
 }
 
@@ -1274,8 +1287,10 @@ button {
   content:"✓";
   margin-right:10px;
   font-weight:700;
-  color:var(--ink);
+  color:var(--accent);
 }
+
+/* TECHNOLOGY */
 
 .tech-grid{
   display:grid;
@@ -1286,7 +1301,7 @@ button {
 
 .tech-item{
   padding:25px;
-  border:1px solid rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.15);
   border-radius:16px;
 }
 
@@ -1294,12 +1309,15 @@ button {
   display:block;
   font-size:17px;
   margin-bottom:7px;
+  color:var(--white);
 }
 
 .tech-item span{
   font-size:13px;
-  opacity:.65;
+  color:rgba(255,255,255,.65);
 }
+
+/* PROCESS */
 
 .process-grid{
   display:grid;
@@ -1310,8 +1328,8 @@ button {
 
 .process-card{
   padding:28px;
-  border-top:2px solid var(--ink);
-  background:var(--paper);
+  border-top:2px solid var(--accent);
+  background:var(--light);
 }
 
 .process-card > span{
@@ -1320,10 +1338,11 @@ button {
   letter-spacing:.15em;
   font-weight:800;
   margin-bottom:35px;
-  opacity:.55;
+  color:var(--accent);
 }
 
 .process-card h3{
+  color:var(--text);
   margin-bottom:12px;
 }
 
@@ -1332,6 +1351,8 @@ button {
   line-height:1.7;
 }
 
+/* CUSTOM PROJECT */
+
 .custom-project{
   display:flex;
   align-items:center;
@@ -1339,7 +1360,7 @@ button {
   gap:40px;
   padding:55px;
   border-radius:24px;
-  background:var(--sand);
+  background:var(--soft);
 }
 
 .custom-project p:not(.eyebrow){
@@ -1347,6 +1368,23 @@ button {
   color:var(--muted);
   line-height:1.8;
 }
+
+/* DARK SECTION */
+
+.dark-section{
+  background:var(--black);
+  color:var(--white);
+}
+
+.dark-section .section-heading h2{
+  color:var(--white);
+}
+
+.dark-section .section-heading p:last-child{
+  color:rgba(255,255,255,.68);
+}
+
+/* CTA */
 
 .cta-section{
   padding-top:20px;
@@ -1356,30 +1394,24 @@ button {
   padding:70px 40px;
   text-align:center;
   border-radius:28px;
-  background:var(--ink);
+  background:var(--dark);
   color:var(--white);
 }
 
 .cta-box h2{
   max-width:850px;
   margin:0 auto 20px;
+  color:var(--white);
 }
 
 .cta-box p:not(.eyebrow){
   max-width:650px;
   margin:0 auto 30px;
-  opacity:.72;
+  color:rgba(255,255,255,.72);
   line-height:1.8;
 }
 
-.dark-section{
-  background:var(--ink);
-  color:var(--white);
-}
-
-.dark-section .section-heading p:last-child{
-  color:rgba(255,255,255,.68);
-}
+/* MOBILE */
 
 @media (max-width:900px){
 
