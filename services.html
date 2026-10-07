@@ -1,14 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Services | Abdul Hafeez — Web Development & Digital Solutions</title>
+  <title>Web Development Services | Abdul Hafeez</title>
 
   <meta
     name="description"
-    content="Professional website development, ecommerce, responsive design, SEO foundations and digital setup services by Abdul Hafeez."
+    content="Explore Abdul Hafeez's web development, ecommerce and digital services with clear packages for businesses, brands and growing online projects."
+  >
+
+  <meta
+    name="keywords"
+    content="web development services, website design, ecommerce development, Shopify, WooCommerce, SEO, Abdul Hafeez"
+  >
+
+  <meta name="author" content="Abdul Hafeez">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Web Development Services | Abdul Hafeez">
+  <meta
+    property="og:description"
+    content="Professional web development, ecommerce and digital solutions for modern businesses and brands."
+  >
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
   >
 
   <link rel="stylesheet" href="style.css">
@@ -16,20 +39,32 @@
 
 <body>
 
-  <!-- ================= HEADER ================= -->
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
 
   <header class="site-header">
-    <div class="container nav-container">
 
-      <a href="index.html" class="logo">
-        Abdul Hafeez<span>.</span>
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand" aria-label="Abdul Hafeez Home">
+        <span class="brand-mark">AH</span>
+        <span class="brand-name">Abdul Hafeez</span>
       </a>
 
-      <button class="menu-toggle" aria-label="Open navigation">
-        ☰
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
-      <nav class="site-nav">
+      <nav class="main-nav" aria-label="Main navigation">
+
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html" class="active">Services</a>
@@ -37,668 +72,858 @@
         <a href="skills.html">Skills</a>
         <a href="experience.html">Experience</a>
         <a href="contact.html">Contact</a>
+
       </nav>
 
     </div>
+
   </header>
 
 
   <main>
 
-    <!-- ================= HERO ================= -->
+    <!-- =====================================================
+         PAGE HERO
+         ===================================================== -->
 
-    <section class="page-hero services-hero">
+    <section class="page-hero">
+
       <div class="container">
 
-        <p class="eyebrow">SERVICES</p>
+        <span class="hero-eyebrow">
+          Services
+        </span>
 
         <h1>
-          Digital experiences
-          <span>built for growth.</span>
+          Digital solutions
+          <span>built around your goals.</span>
         </h1>
 
-        <p class="hero-text">
-          I build modern, responsive and professional digital experiences
-          for businesses, ecommerce brands and entrepreneurs.
-        </p>
-
-        <div class="hero-actions">
-          <a href="contact.html" class="btn btn-primary">
-            Start a Project
-          </a>
-
-          <a href="portfolio.html" class="btn btn-secondary">
-            View My Work
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ================= WHAT I BUILD ================= -->
-
-    <section class="section">
-      <div class="container">
-
-        <div class="section-heading">
-          <p class="eyebrow">WHAT I BUILD</p>
-
-          <h2>
-            Practical digital solutions
-            <span>for real businesses.</span>
-          </h2>
-
-          <p>
-            From business websites to ecommerce experiences, I focus on
-            clean design, responsive layouts and reliable foundations.
-          </p>
-        </div>
-
-
-        <div class="service-grid">
-
-          <article class="service-card">
-            <div class="service-number">01</div>
-
-            <h3>Business Websites</h3>
-
-            <p>
-              Professional websites designed to establish credibility,
-              explain your services and turn visitors into potential
-              customers.
-            </p>
-
-            <span class="service-tag">
-              HTML · CSS · JavaScript
-            </span>
-          </article>
-
-
-          <article class="service-card">
-            <div class="service-number">02</div>
-
-            <h3>Ecommerce Websites</h3>
-
-            <p>
-              Modern ecommerce experiences for online stores, product
-              catalogs and growing digital businesses.
-            </p>
-
-            <span class="service-tag">
-              Shopify · WooCommerce
-            </span>
-          </article>
-
-
-          <article class="service-card">
-            <div class="service-number">03</div>
-
-            <h3>Responsive Design</h3>
-
-            <p>
-              Mobile-friendly layouts that provide a consistent experience
-              across phones, tablets and desktop screens.
-            </p>
-
-            <span class="service-tag">
-              Responsive UI
-            </span>
-          </article>
-
-
-          <article class="service-card">
-            <div class="service-number">04</div>
-
-            <h3>SEO Foundations</h3>
-
-            <p>
-              Basic technical and on-page SEO foundations that help prepare
-              websites for search engines and organic discovery.
-            </p>
-
-            <span class="service-tag">
-              SEO · Search Console
-            </span>
-          </article>
-
-
-          <article class="service-card">
-            <div class="service-number">05</div>
-
-            <h3>Deployment</h3>
-
-            <p>
-              Website deployment, domains, DNS configuration and practical
-              hosting setup for launching a project online.
-            </p>
-
-            <span class="service-tag">
-              GitHub · Cloudflare
-            </span>
-          </article>
-
-
-          <article class="service-card">
-            <div class="service-number">06</div>
-
-            <h3>Digital Setup</h3>
-
-            <p>
-              Help connecting the essential digital pieces around a website,
-              including domains, ecommerce platforms and online tools.
-            </p>
-
-            <span class="service-tag">
-              Digital Infrastructure
-            </span>
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ================= PRICING ================= -->
-
-    <section class="section pricing-section">
-      <div class="container">
-
-        <div class="section-heading">
-          <p class="eyebrow">STARTING PACKAGES</p>
-
-          <h2>
-            Simple packages.
-            <span>Clear expectations.</span>
-          </h2>
-
-          <p>
-            Choose a starting package or contact me for a custom project
-            based on your requirements.
-          </p>
-        </div>
-
-
-        <div class="pricing-table-wrapper">
-
-          <table class="pricing-table">
-
-            <thead>
-              <tr>
-                <th>Service</th>
-                <th>
-                  Starter
-                  <strong>$99</strong>
-                </th>
-
-                <th class="featured-column">
-                  Standard
-                  <strong>$249</strong>
-                </th>
-
-                <th>
-                  Premium
-                  <strong>$499</strong>
-                </th>
-              </tr>
-            </thead>
-
-
-            <tbody>
-
-              <tr>
-                <td>Website</td>
-                <td>Basic</td>
-                <td>Professional</td>
-                <td>Advanced</td>
-              </tr>
-
-              <tr>
-                <td>Pages</td>
-                <td>1–3</td>
-                <td>4–7</td>
-                <td>8+</td>
-              </tr>
-
-              <tr>
-                <td>Responsive</td>
-                <td>✓</td>
-                <td>✓</td>
-                <td>✓</td>
-              </tr>
-
-              <tr>
-                <td>SEO basics</td>
-                <td>✓</td>
-                <td>✓</td>
-                <td>✓</td>
-              </tr>
-
-              <tr>
-                <td>Deployment</td>
-                <td>✓</td>
-                <td>✓</td>
-                <td>✓</td>
-              </tr>
-
-              <tr>
-                <td>Revisions</td>
-                <td>1</td>
-                <td>3</td>
-                <td>5</td>
-              </tr>
-
-              <tr>
-                <td>Support</td>
-                <td>Basic</td>
-                <td>Standard</td>
-                <td>Priority</td>
-              </tr>
-
-              <tr>
-                <td>Best For</td>
-                <td>Small projects</td>
-                <td>Growing businesses</td>
-                <td>Advanced projects</td>
-              </tr>
-
-              <tr class="pricing-actions">
-                <td></td>
-
-                <td>
-                  <a href="contact.html" class="btn btn-secondary">
-                    Choose Starter
-                  </a>
-                </td>
-
-                <td>
-                  <a href="contact.html" class="btn btn-primary">
-                    Choose Standard
-                  </a>
-                </td>
-
-                <td>
-                  <a href="contact.html" class="btn btn-secondary">
-                    Choose Premium
-                  </a>
-                </td>
-              </tr>
-
-            </tbody>
-
-          </table>
-
-        </div>
-
-        <p class="pricing-note">
-          Prices shown are starting prices. Final pricing depends on project
-          scope, features, integrations and content requirements.
+        <p>
+          From professional business websites to ecommerce experiences,
+          I create modern digital solutions designed to look polished,
+          work smoothly and support real business objectives.
         </p>
 
       </div>
+
     </section>
 
 
-    <!-- ================= PACKAGE DETAILS ================= -->
+    <!-- =====================================================
+         SERVICES INTRO
+         ===================================================== -->
 
     <section class="section">
+
       <div class="container">
 
-        <div class="section-heading">
-          <p class="eyebrow">PACKAGE DETAILS</p>
+        <div class="section-intro">
+
+          <span class="section-label">
+            What I Offer
+          </span>
 
           <h2>
-            What each level
-            <span>is designed for.</span>
+            Choose the right
+            <span>level of support.</span>
           </h2>
+
+          <p>
+            Every project is different. These packages provide a clear
+            starting point while allowing the final scope to be tailored
+            to your needs.
+          </p>
+
         </div>
 
 
-        <div class="service-grid package-grid">
+        <!-- =================================================
+             PRICING
+             ================================================= -->
 
-          <article class="service-card">
+        <div class="pricing-grid">
 
-            <p class="card-label">STARTER</p>
+          <!-- STARTER -->
 
-            <h3>$99</h3>
+          <article class="pricing-card">
 
-            <p>
-              A focused starting point for individuals, small businesses
-              and simple online projects.
-            </p>
+            <div class="pricing-top">
 
-            <ul class="feature-list">
-              <li>1–3 pages</li>
-              <li>Responsive design</li>
-              <li>Basic SEO</li>
-              <li>Website deployment</li>
-              <li>1 revision</li>
-              <li>Basic support</li>
+              <span class="pricing-label">
+                Starter
+              </span>
+
+              <div class="pricing-price">
+                <span>$</span>99
+              </div>
+
+              <p>
+                A professional starting point for individuals and small
+                businesses that need a clean online presence.
+              </p>
+
+            </div>
+
+
+            <div class="pricing-divider"></div>
+
+
+            <ul class="pricing-features">
+
+              <li>
+                <span>✓</span>
+                1–3 page website
+              </li>
+
+              <li>
+                <span>✓</span>
+                Responsive mobile design
+              </li>
+
+              <li>
+                <span>✓</span>
+                Modern professional layout
+              </li>
+
+              <li>
+                <span>✓</span>
+                Basic contact section
+              </li>
+
+              <li>
+                <span>✓</span>
+                Basic SEO setup
+              </li>
+
+              <li>
+                <span>✓</span>
+                1 revision
+              </li>
+
             </ul>
+
+
+            <a href="contact.html" class="btn btn-secondary pricing-button">
+              Get Started
+              <span>→</span>
+            </a>
 
           </article>
 
 
-          <article class="service-card featured-card">
+          <!-- STANDARD -->
 
-            <p class="card-label">STANDARD</p>
+          <article class="pricing-card featured">
 
-            <h3>$249</h3>
+            <div class="pricing-badge">
+              Most Popular
+            </div>
 
-            <p>
-              A professional website package for businesses that need a
-              stronger online presence and more complete structure.
-            </p>
+            <div class="pricing-top">
 
-            <ul class="feature-list">
-              <li>4–7 pages</li>
-              <li>Responsive design</li>
-              <li>SEO foundations</li>
-              <li>Deployment</li>
-              <li>3 revisions</li>
-              <li>Standard support</li>
+              <span class="pricing-label">
+                Standard
+              </span>
+
+              <div class="pricing-price">
+                <span>$</span>249
+              </div>
+
+              <p>
+                A complete professional website for businesses and brands
+                ready to build a stronger digital presence.
+              </p>
+
+            </div>
+
+
+            <div class="pricing-divider"></div>
+
+
+            <ul class="pricing-features">
+
+              <li>
+                <span>✓</span>
+                5–7 page website
+              </li>
+
+              <li>
+                <span>✓</span>
+                Responsive desktop & mobile design
+              </li>
+
+              <li>
+                <span>✓</span>
+                Custom modern layout
+              </li>
+
+              <li>
+                <span>✓</span>
+                Contact form interface
+              </li>
+
+              <li>
+                <span>✓</span>
+                SEO foundations
+              </li>
+
+              <li>
+                <span>✓</span>
+                Social media integration
+              </li>
+
+              <li>
+                <span>✓</span>
+                Performance-focused structure
+              </li>
+
+              <li>
+                <span>✓</span>
+                3 revisions
+              </li>
+
             </ul>
+
+
+            <a href="contact.html" class="btn btn-primary pricing-button">
+              Choose Standard
+              <span>→</span>
+            </a>
 
           </article>
 
 
-          <article class="service-card">
+          <!-- PREMIUM -->
 
-            <p class="card-label">PREMIUM</p>
+          <article class="pricing-card">
 
-            <h3>$499</h3>
+            <div class="pricing-top">
 
-            <p>
-              An advanced starting package for larger websites, stronger
-              presentation and more complex requirements.
-            </p>
+              <span class="pricing-label">
+                Premium
+              </span>
 
-            <ul class="feature-list">
-              <li>8+ pages</li>
-              <li>Advanced responsive design</li>
-              <li>SEO foundations</li>
-              <li>Deployment</li>
-              <li>5 revisions</li>
-              <li>Priority support</li>
+              <div class="pricing-price">
+                <span>$</span>499
+              </div>
+
+              <p>
+                A complete premium digital experience for brands that want
+                a stronger online presence and a more advanced solution.
+              </p>
+
+            </div>
+
+
+            <div class="pricing-divider"></div>
+
+
+            <ul class="pricing-features">
+
+              <li>
+                <span>✓</span>
+                8+ page website
+              </li>
+
+              <li>
+                <span>✓</span>
+                Premium responsive design
+              </li>
+
+              <li>
+                <span>✓</span>
+                Advanced page structure
+              </li>
+
+              <li>
+                <span>✓</span>
+                Ecommerce-ready structure
+              </li>
+
+              <li>
+                <span>✓</span>
+                Shopify / WooCommerce support
+              </li>
+
+              <li>
+                <span>✓</span>
+                Advanced SEO foundations
+              </li>
+
+              <li>
+                <span>✓</span>
+                Social and digital integrations
+              </li>
+
+              <li>
+                <span>✓</span>
+                5 revisions
+              </li>
+
             </ul>
+
+
+            <a href="contact.html" class="btn btn-secondary pricing-button">
+              Start a Project
+              <span>↗</span>
+            </a>
 
           </article>
 
         </div>
 
       </div>
+
     </section>
 
 
-    <!-- ================= TECHNOLOGY ================= -->
+    <!-- =====================================================
+         CORE SERVICES
+         ===================================================== -->
 
-    <section class="section dark-section">
+    <section class="section section-light">
+
       <div class="container">
 
-        <div class="section-heading">
-          <p class="eyebrow">TECHNOLOGY</p>
+        <div class="section-intro">
+
+          <span class="section-label">
+            Core Services
+          </span>
 
           <h2>
-            Tools I use to
-            <span>build digital experiences.</span>
+            More than just
+            <span>building pages.</span>
           </h2>
+
+          <p>
+            I combine development, design thinking and digital fundamentals
+            to create experiences that are useful as well as visually strong.
+          </p>
+
         </div>
 
 
-        <div class="tech-grid">
+        <div class="cards-grid cards-grid-3">
 
-          <div class="tech-item">
-            <strong>HTML</strong>
-            <span>Structure</span>
-          </div>
+          <article class="card">
 
-          <div class="tech-item">
-            <strong>CSS</strong>
-            <span>Design</span>
-          </div>
+            <div class="card-number">
+              01
+            </div>
 
-          <div class="tech-item">
-            <strong>JavaScript</strong>
-            <span>Interaction</span>
-          </div>
+            <h3>
+              Business Websites
+            </h3>
 
-          <div class="tech-item">
-            <strong>Shopify</strong>
-            <span>Ecommerce</span>
-          </div>
+            <p>
+              Professional websites that communicate your brand, services
+              and value clearly while creating a trustworthy first impression.
+            </p>
 
-          <div class="tech-item">
-            <strong>WooCommerce</strong>
-            <span>WordPress</span>
-          </div>
+            <a href="contact.html" class="text-link">
+              Discuss a website
+              <span>→</span>
+            </a>
 
-          <div class="tech-item">
-            <strong>Cloudflare</strong>
-            <span>DNS & Security</span>
-          </div>
+          </article>
 
-          <div class="tech-item">
-            <strong>GitHub</strong>
-            <span>Deployment</span>
-          </div>
 
-          <div class="tech-item">
-            <strong>SEO</strong>
-            <span>Organic Growth</span>
-          </div>
+          <article class="card">
+
+            <div class="card-number">
+              02
+            </div>
+
+            <h3>
+              Ecommerce Development
+            </h3>
+
+            <p>
+              Ecommerce experiences focused on product presentation,
+              customer journeys, mobile usability and practical conversion.
+            </p>
+
+            <a href="contact.html" class="text-link">
+              Discuss ecommerce
+              <span>→</span>
+            </a>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-number">
+              03
+            </div>
+
+            <h3>
+              Responsive Design
+            </h3>
+
+            <p>
+              Interfaces designed to remain clean, readable and functional
+              across desktops, tablets and mobile devices.
+            </p>
+
+            <a href="contact.html" class="text-link">
+              Discuss your design
+              <span>→</span>
+            </a>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-number">
+              04
+            </div>
+
+            <h3>
+              Shopify & WooCommerce
+            </h3>
+
+            <p>
+              Store setup support, product presentation, structure and
+              practical ecommerce improvements for established platforms.
+            </p>
+
+            <a href="contact.html" class="text-link">
+              Discuss your store
+              <span>→</span>
+            </a>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-number">
+              05
+            </div>
+
+            <h3>
+              SEO Foundations
+            </h3>
+
+            <p>
+              Search-friendly page structure, titles, descriptions and
+              foundational optimization to give websites a stronger starting
+              point for organic discovery.
+            </p>
+
+            <a href="contact.html" class="text-link">
+              Discuss SEO
+              <span>→</span>
+            </a>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-number">
+              06
+            </div>
+
+            <h3>
+              Website Refinement
+            </h3>
+
+            <p>
+              Improvements to existing websites including layout,
+              responsiveness, content structure, usability and visual polish.
+            </p>
+
+            <a href="contact.html" class="text-link">
+              Improve your website
+              <span>→</span>
+            </a>
+
+          </article>
 
         </div>
 
       </div>
+
     </section>
 
 
-    <!-- ================= HOW I WORK ================= -->
+    <!-- =====================================================
+         PROCESS
+         ===================================================== -->
 
     <section class="section">
+
       <div class="container">
 
-        <div class="section-heading">
-          <p class="eyebrow">HOW I WORK</p>
+        <div class="section-intro">
+
+          <span class="section-label">
+            How It Works
+          </span>
 
           <h2>
-            A clear process from
-            <span>idea to launch.</span>
+            A simple process,
+            <span>built for progress.</span>
           </h2>
+
         </div>
 
 
         <div class="process-grid">
 
           <article class="process-card">
-            <span>01</span>
-            <h3>Understand</h3>
+
+            <span class="process-number">
+              01
+            </span>
+
+            <h3>
+              Discover
+            </h3>
+
             <p>
-              I first understand the business, audience, goals and project
-              requirements.
+              Understand your goals, audience, brand and project requirements
+              before development begins.
             </p>
+
           </article>
 
 
           <article class="process-card">
-            <span>02</span>
-            <h3>Plan</h3>
+
+            <span class="process-number">
+              02
+            </span>
+
+            <h3>
+              Plan
+            </h3>
+
             <p>
-              I organize the structure, content, functionality and visual
-              direction before development.
+              Organize the pages, structure, content and functionality needed
+              to create a clear project direction.
             </p>
+
           </article>
 
 
           <article class="process-card">
-            <span>03</span>
-            <h3>Build</h3>
+
+            <span class="process-number">
+              03
+            </span>
+
+            <h3>
+              Build
+            </h3>
+
             <p>
-              I develop the website with responsive layouts, clean
-              structure and practical functionality.
+              Develop the experience with responsive layouts, clean structure
+              and attention to usability.
             </p>
+
           </article>
 
 
           <article class="process-card">
-            <span>04</span>
-            <h3>Launch</h3>
+
+            <span class="process-number">
+              04
+            </span>
+
+            <h3>
+              Refine
+            </h3>
+
             <p>
-              After testing and revisions, the project is prepared for
-              deployment and launch.
+              Review the result, improve the details and prepare the final
+              experience for launch.
             </p>
+
           </article>
 
         </div>
 
       </div>
+
     </section>
 
 
-    <!-- ================= CUSTOM PROJECTS ================= -->
+    <!-- =====================================================
+         FAQ / PROJECT FIT
+         ===================================================== -->
 
-    <section class="section">
+    <section class="section section-light">
+
       <div class="container">
 
-        <div class="custom-project">
+        <div class="section-intro">
 
-          <div>
-            <p class="eyebrow">CUSTOM PROJECTS</p>
-
-            <h2>
-              Have something
-              <span>different in mind?</span>
-            </h2>
-
-            <p>
-              Not every project fits inside a fixed package. If you need
-              ecommerce functionality, a larger website, custom sections,
-              integrations or a unique digital experience, we can discuss
-              the requirements.
-            </p>
-          </div>
-
-          <div>
-            <a href="contact.html" class="btn btn-primary">
-              Discuss Your Project
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ================= CTA ================= -->
-
-    <section class="section cta-section">
-      <div class="container">
-
-        <div class="cta-box">
-
-          <p class="eyebrow">LET'S BUILD</p>
+          <span class="section-label">
+            Project Fit
+          </span>
 
           <h2>
-            Ready to turn your
-            <span>idea into a digital experience?</span>
+            Looking for something
+            <span>different?</span>
           </h2>
 
           <p>
-            Tell me what you are building and what you need.
-            We'll start with the requirements and find the right approach.
+            Not every project fits neatly into a package. If you have a
+            specific requirement, send the details and we can define the
+            right scope together.
           </p>
 
-          <a href="contact.html" class="btn btn-primary">
-            Contact Me
-          </a>
+        </div>
+
+
+        <div class="project-fit">
+
+          <div class="project-fit-item">
+
+            <strong>
+              Custom website
+            </strong>
+
+            <span>
+              Tailored page structure and functionality
+            </span>
+
+          </div>
+
+
+          <div class="project-fit-item">
+
+            <strong>
+              Ecommerce project
+            </strong>
+
+            <span>
+              Store-focused design and development support
+            </span>
+
+          </div>
+
+
+          <div class="project-fit-item">
+
+            <strong>
+              Website redesign
+            </strong>
+
+            <span>
+              Modernize an existing digital presence
+            </span>
+
+          </div>
+
+
+          <div class="project-fit-item">
+
+            <strong>
+              Remote collaboration
+            </strong>
+
+            <span>
+              Work with businesses, agencies and development teams
+            </span>
+
+          </div>
 
         </div>
 
       </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CTA
+         ===================================================== -->
+
+    <section class="final-cta">
+
+      <div class="container">
+
+        <div class="final-cta-inner">
+
+          <span class="section-label">
+            Start a Project
+          </span>
+
+          <h2>
+            Ready to build
+            <span>something better?</span>
+          </h2>
+
+          <p>
+            Tell me what you are building, what you need and where you want
+            to go. Let’s create a digital experience that moves the project
+            forward.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="contact.html" class="btn btn-primary">
+              Let’s Work Together
+              <span>→</span>
+            </a>
+
+            <a href="portfolio.html" class="btn btn-secondary">
+              View My Work
+              <span>↗</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
 
   </main>
 
 
-  <!-- ================= FOOTER ================= -->
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
 
   <footer class="site-footer">
 
-    <div class="container footer-grid">
+    <div class="container footer-main">
 
-      <div>
-        <a href="index.html" class="logo">
-          Abdul Hafeez<span>.</span>
+      <div class="footer-brand">
+
+        <a href="index.html" class="brand">
+          <span class="brand-mark">AH</span>
+          <span class="brand-name">Abdul Hafeez</span>
         </a>
 
         <p>
-          Building modern digital experiences for businesses,
-          ecommerce brands and entrepreneurs.
+          Web development and digital solutions for modern businesses,
+          brands and ambitious ideas.
         </p>
+
       </div>
 
 
-      <div>
-        <h4>Navigation</h4>
+      <div class="footer-column">
+
+        <h4>
+          Navigation
+        </h4>
 
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="portfolio.html">Portfolio</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>
+          Explore
+        </h4>
+
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
         <a href="contact.html">Contact</a>
+
       </div>
 
 
-      <div>
-        <h4>Services</h4>
+      <div class="footer-column">
 
-        <a href="services.html">Business Websites</a>
+        <h4>
+          Services
+        </h4>
+
+        <a href="services.html">Web Development</a>
         <a href="services.html">Ecommerce</a>
-        <a href="services.html">Responsive Design</a>
         <a href="services.html">SEO Foundations</a>
-      </div>
 
-
-      <div>
-        <h4>Contact</h4>
-
-        <a href="contact.html">Start a Project</a>
-        <a href="mailto:abdulhafeez@thetradetrove.com">
-          Email Me
-        </a>
       </div>
 
     </div>
 
 
-    <div class="container footer-bottom">
+    <div class="footer-bottom">
 
-      <p>
-        © 2026 Abdul Hafeez. All rights reserved.
-      </p>
+      <div class="container">
 
-      <p>
-        Web Development · Ecommerce · Digital Solutions
-      </p>
+        <p>
+          © 2026 Abdul Hafeez. All rights reserved.
+        </p>
+
+        <p>
+          Web Developer & Digital Solutions Specialist
+        </p>
+
+      </div>
 
     </div>
 
   </footer>
 
 
-  <!-- ================= MOBILE NAV ================= -->
+  <!-- =====================================================
+       MOBILE NAVIGATION
+       ===================================================== -->
 
   <script>
-    const menuToggle = document.querySelector(".menu-toggle");
-    const siteNav = document.querySelector(".site-nav");
 
-    if (menuToggle && siteNav) {
-      menuToggle.addEventListener("click", () => {
-        siteNav.classList.toggle("open");
+    const navToggle = document.querySelector(".nav-toggle");
+    const mainNav = document.querySelector(".main-nav");
+
+    if (navToggle && mainNav) {
+
+      navToggle.addEventListener("click", () => {
+
+        const isOpen = mainNav.classList.toggle("open");
+
+        navToggle.setAttribute(
+          "aria-expanded",
+          isOpen ? "true" : "false"
+        );
+
+        navToggle.setAttribute(
+          "aria-label",
+          isOpen ? "Close navigation" : "Open navigation"
+        );
+
       });
+
+
+      mainNav.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          mainNav.classList.remove("open");
+
+          navToggle.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+          navToggle.setAttribute(
+            "aria-label",
+            "Open navigation"
+          );
+
+        });
+
+      });
+
     }
+
   </script>
 
 </body>
